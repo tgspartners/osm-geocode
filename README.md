@@ -47,6 +47,11 @@ dependencies
 
 demo
 ====
+<div id="osm-div" style="height:400px;width:400px;float:right;"></div>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="http://openlayers.org/api/2.13.1/OpenLayers.js"></script>
+<script id="osm-geocode" data-address="Trafalgar Square, Westminster, London WC2N 5DN" src="/osm-geocode/osm-geocode.js"></script>
+
 you can see the script in action at http://tgspartners.com/partnership/contact/
 
 license / attribution
