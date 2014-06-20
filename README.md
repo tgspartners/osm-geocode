@@ -16,7 +16,6 @@ the maps to give accurate locations for any given street address. in the process
 mapping engines against several postcode / gps databases. currently, we have opted for the following -
 * external geocode for open street map
 * used for "find us" pages by simply supplying a street address
-* uses prototype.js for lightweight ajax library
 * uses client-side geocoding to avoid api limits
 * uses open-source mapping data
 * takes full street address (eg. uk postal address including post code)
@@ -31,18 +30,17 @@ usage
 very simple to get up and running -
 * download `osm-geocode/osm-geocode.js` on your web servers root directory
 * insert the following code into your HTML document
-* be sure to replace $$$ with the full postal address of your point of interest
+* be sure to replace the $$$ in data-address="$$$"" with the full postal address of your point of interest
 ```html
 <div id="osm-div" style="height:600px;"></div>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script src="http://openlayers.org/api/2.13.1/OpenLayers.js"></script>
-<script id="osm-geocode" data-addr="$$$" src="/osm-geocode/osm-geocode.js"></script>
+<script id="osm-geocode" data-address="$$$" src="/osm-geocode/osm-geocode.js"></script>
 ```
 
 dependencies
 ============
 `osm-geocode.js` depends on the following libraries / frameworks -
-* prototype.js
 * google maps api
 * openlayers.org
 * openlayers osm layer
