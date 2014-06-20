@@ -47,7 +47,7 @@ dependencies
 
 demo
 ====
-you can see the script in action over at http://b.tgspartners.com/blog/2014/06/19/how-to-use-openstreetmap-with-google-geocode-using-osm-geocode-js/
+you can see the script in action over at http://tgspartners.com/blog/2014/06/19/how-to-use-openstreetmap-with-google-geocode-using-osm-geocode-js/
 
 sample json result
 ==================
