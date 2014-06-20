@@ -1,4 +1,4 @@
-var address = document.getElementById('osm-geocode').getAttribute('data-address');                                // read street address passed in by data-* attribute
+var address = document.getElementById('osm-geocode').getAttribute('data-address');
 var geocoder = new google.maps.Geocoder();
 if (geocoder) {
   geocoder.geocode({ 'address': address }, function (results, status) {
@@ -20,4 +20,4 @@ if (geocoder) {
         alert("Geocoding failed: " + status);
      }
   });
-}    
+}
